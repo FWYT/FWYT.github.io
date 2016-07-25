@@ -2,27 +2,53 @@
 <html>
 <head>
 <title>Frances Tso</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
 <link rel = "stylesheet" type="text/css" href="CSS/index.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" type="text/css" href="CSS/w3.css">
 <link rel="stylesheet" type="text/css" href="CSS/w3-theme-black.css">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
 
-
-<!--Header-->
-<header id="header" class="w3-xxxlarge w3-animate-bottom">
+<div id="wrap">
+<!--Header
+<header id="header" class="w3-animate-bottom">
     <div class="w3-center">
         <h1 id="title">Frances Tso</h1>
         <h2 id="description">Software Developer, Economist</h2>
         <h4>Competitive Billiards Player, Violinist, Painter</h4>
     </div>
 </header>
+-->
+<div class="jumbotron">
+    <div class="container text-center" id="title">
+        <h1 id="head">Frances Tso</h1>
+        <h2>Software Developer, Economist</h2>
+        <h4>Competitive Billiards Player, Violinist, Painter<?h4>
+    </div>
+</div>
 
-<div class="w3-row-padding w3-center w3-margin-top">
-    <div class="w3-rest">
-        <div class="w3-card-2 w3-padding-top" id="about" style="min-height:320px">
+<div id="content">
+<!--<div class="w3-row-padding w3-center w3-margin-top">-->
+<div class="row text-center">
+
+    <!--<div class="w3-rest">-->
+    <div class="col-sm-12">
+        <div class="w3-card-2 w3-padding-top" id="about" style="min-height:350px">
             <div id="profile">
                 <img src="images/profile.jpg" id="profileImage">
             </div>
@@ -31,12 +57,12 @@
                 <h4>About Me</h4>
                 <p>I was born in Hong Kong and came to the U.S in 2008. I went to Alaska for high school and I am now a senior at Carnegie Mellon University studying Computer Science and Economics. </p>
                 <p>During the summer of 2015, I interned at NASA Ames Research Center's Human System Interaction department as a software developer. I have also worked in the Robotics Institute as an undergraduate researcher in the Graphics Lab and volunteered at Center for Victims in Pittsburgh as a web developer. Currently, I am software developer at Bossa Nova Robotics's Data Engineering team.</p>
-                <p>I play billiards competitively and I love the sport. I won first place at University of Akron Regionals for Women's 9 Ball and second place at University of Michigan Team Championships with my school team in 2015. Look below for my notes on drills and practices! </p>
+                <p>I play billiards competitively and I love the sport. I won first place at University of Akron Regionals for Women's 9 Ball and second place at University of Michigan Team Championships with my CMU team in 2015. Look below for my notes on drills and practices! </p>
 
                 <p>In my free time, I also like cooking, playing violin, and painting with gouache. Check below for recipes and paintings that I've done!</p>
     
                 <td>
-                    <a id="fb" href='pdf/FrancesTsoResume.pdf' target="_blank" 
+                    <a id="resume" href='pdf/FrancesTsoResume.pdf' target="_blank" 
                         style="padding-right:15px">
                         <i class="fa fa-file-pdf-o" style="font-size:32px"></i>
                     </a> 
@@ -59,32 +85,36 @@
     </div>
 </div>
 
-<div class="w3-row-padding w3-center w3-margin-top">
+<div class="w3-row-padding w3-center w3-margin-top" id="top">
     <div class="w3-third">
-        <div class="w3-card-2 w3-padding-top" style="min-height:320px">
-            <h4>Recipes</h4><br>
-            <i class="fa fa-cutlery w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-            <p>Recipes you should try!</p>
-        </div>
+        <a href="#">
+            <div class="w3-card-2 w3-padding-top" style="min-height:320px">
+                <h4>Recipes</h4><br>
+                <img src="images/recipes.png"> 
+                <p>Recipes you should try!</p>
+            </div>
+        </a>
     </div>
 
     <div class="w3-third">
-      <div class="w3-card-2 w3-padding-top" style="min-height:320px">
-        <h4>Billiards Guide</h4><br>
-        <!--<i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>-->
-        <img src="images/pool.png">
-        <p>Drills, Cues, Notes</p>
-        <p>Anything I learned about playing so far</p>
-      </div>
+        <a href="#">
+            <div class="w3-card-2 w3-padding-top" style="min-height:320px">
+               <h4>Billiards Guide</h4><br>
+                <img src="images/pool.png">
+                <p>Drills, Cues, Notes</p>
+                <p>Anything I learned about playing so far</p>
+            </div>
+        </a>
     </div>
 
     <div class="w3-third">
-      <div class="w3-card-2 w3-padding-top" style="min-height:320px">
-        <h4>Paintings</h4><br>
-        <!--<i class="fa fa-image w3-margin-bottom w3-text-theme" style="font-size:120px"></i>-->
-        <img src="images/painting.png">
-        <p>Check out a gallery of my paintings!</p>
-      </div>
+        <a href="Paintings/paintings.html">
+            <div class="w3-card-2 w3-padding-top" style="min-height:320px">
+                <h4>Paintings</h4><br>
+                <img src="images/painting.png">
+                <p>Check out a gallery of my paintings!</p>
+            </div>
+        </a>
     </div>
 </div>
 
@@ -92,45 +122,49 @@
 
 <div class="w3-row-padding w3-center w3-margin-top">
     <div class="w3-half">
-        <div class="w3-card-2 w3-padding-top" style="min-height:320px">
-            <h4>Tech/Library Tutorials</h4><br>
-            <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-            <p>Various tutorials on programming libraries, languages, and hardware.</p>
-        </div>
+        <a href="#">
+            <div class="w3-card-2 w3-padding-top" style="min-height:320px">
+                <h4>Tech/Library Tutorials</h4><br>
+                <img src="images/display.png">
+                <p>Various tutorials on programming libraries, languages, and hardware.</p>
+            </div>
+        </a>
     </div>
 
     <div class="w3-half">
-      <div class="w3-card-2 w3-padding-top" style="min-height:320px">
-        <h4>Interesting Finds of the Week</h4><br>
-        <i class="fa fa-search w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-        <p>Interesting items, knowledge, or events that I came across!</p>
-      </div>
+        <a href="#">
+            <div class="w3-card-2 w3-padding-top" style="min-height:320px">
+                <h4>Interesting Finds of the Week</h4><br>
+                <img src="images/find.png"> 
+                <p>Interesting items, knowledge, or events that I came across!</p>
+            </div>
+        </a>
     </div>
 
 </div>
+</div>
+
+<footer id="footer" class="w3-container w3-theme-black w3-padding-16">
+    <h3>Frances Tso</h3>
+    <td>
+        <a id="resume" class="footerIcons" href='pdf/FrancesTsoResume.pdf' target="_blank" >
+            <i class="fa fa-file-pdf-o" style="font-size:32px"></i>
+        </a>
+        <a id="fb" class="footerIcons" href='https://www.facebook.com/frances.tso.5' target="_blank">
+            <i class="fa fa-facebook-official" style="font-size:32px"></i>
+        </a> 
+        <a id="in" class="footerIcons" href='https://www.linkedin.com/in/fwtso' target="_blank">
+            <i class="fa fa-linkedin" style="font-size:32px"></i>
+        </a>
+        <a id="git" class="footerIcons" href='https://github.com/FWYT' target="_blank">
+            <i class="fa fa-github" style="font-size:32px"></i>
+        </a>
+    </td>
 
 
-<footer class="w3-container w3-theme-dark w3-padding-16">
-<h3>Frances Tso</h3>
-<td>
-<a id="fb" href='pdf/FrancesTsoResume.pdf' target="_blank" >
-    <i class="fa fa-file-pdf-o" style="font-size:32px"></i>
-</a>
-<a id="fb" href='https://www.facebook.com/frances.tso.5' target="_blank">
-    <i class="fa fa-facebook-official" style="font-size:32px"></i>
-</a> 
-<a id="in" href='https://www.linkedin.com/in/fwtso' target="_blank">
-    <i class="fa fa-linkedin" style="font-size:32px"></i>
-</a>
-<a id="git" href='https://github.com/FWYT' target="_blank">
-    <i class="fa fa-github" style="font-size:32px"></i>
-</a>
-</td>
-
-
-<p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> 
+    <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> 
 </footer>
-
+</div>
 </body>
 </html>
 
