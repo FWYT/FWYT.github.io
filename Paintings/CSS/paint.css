@@ -52,4 +52,11 @@ footer {
     margin-right:10px;
 }
 
+.paint {
+    width:50%;
+    height:50%;
+    float:none;
+    margin:0 auto;
+}
+
 
